@@ -28,12 +28,12 @@
         </nav>
 
         <div class="flex justify-center gap-3 mt-[70px] pb-[32px]">
-            <button class="btn bg-[#B4F461] text-[20px] hover:bg-green-300">Donation</button>
-            <button class="btn btn-outline text-[#111111B3] text-[20px] hover:bg-green-300">History</button>
+            <button class="btn bg-[#B4F461] text-[20px] hover:bg-green-300" id="donation-btn">Donation</button>
+            <button class="btn btn-outline text-[#111111B3] text-[20px] hover:bg-green-300" id="history-btn">History</button>
         </div>
     </header>
     <main class="max-w-[1080px] mx-auto">
-        <section>
+        <section id="donation" class="">
             <!-- Card - 1  -->
             <div class="flex flex-col lg:flex-row gap-[32px] justify-between p-[32px] rounded-sm border items-center border-gray-100">
                 <div>
@@ -111,11 +111,11 @@
             </div>
         </section>
        <!-- History  -->
-        <section>
-            <div class="rounded-sm border border-gray-100 p-[32px] mt-[32px]">
+        <section id="history" class="hidden">
+            <!-- <div class="rounded-sm border border-gray-100 p-[32px] mt-[32px]">
                 <h2 class="text-[20px] font-semibold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
                 <p class="font-light pt-[16px]">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-            </div>
+            </div> -->
 
         </section>
 
