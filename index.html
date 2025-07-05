@@ -32,7 +32,20 @@
             <button class="btn btn-outline text-[#111111B3] text-[20px] hover:bg-green-300" id="history-btn">History</button>
         </div>
     </header>
-    <main class="max-w-[1080px] mx-auto">
+    <main id="main" class="max-w-[1080px] mx-auto">
+        <section>
+            <dialog id="dial" class="mx-auto my-auto rounded">
+                <div class="flex flex-col px-30 py-5 gap-2 items-center ">
+                    <h1 class="text-3xl font-bold">Congrates!</h1>
+                    <div>
+                        <img class="h-[24px] w-[24px]" src="./assets/coin.png" alt="" srcset="">
+                    </div>
+                    <p class="font-light">You have donated</p>
+                    <p class="font-bold">Successfully</p>
+                    <button class="btn" id="closeModal">close confirmation</button>
+                </div>
+           </dialog>
+        </section>
         <section id="donation" class="">
             <!-- Card - 1  -->
             <div class="flex flex-col lg:flex-row gap-[32px] justify-between p-[32px] rounded-sm border items-center border-gray-100">

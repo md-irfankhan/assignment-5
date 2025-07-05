@@ -60,10 +60,13 @@ function addHistory(inputId) {
     history.appendChild(historyEl)
 }
 function donateMoney(buttonId, inputId, donatedId) {
+    
     document.getElementById(buttonId).addEventListener('click', function () {
         donationId(donatedId, inputId);
         // addHistory(inputId);
         if (getInput(inputId) > 0) {
+            dialog=document.getElementById('dial')
+            dialog.showModal()
             addHistory(inputId)
         }
         //           console.log(document.getElementById(inputId).previousElementSibling.previousElementSibling.textContent
@@ -83,3 +86,4 @@ function showElement(id, btnId) {
 
 
 }
+
